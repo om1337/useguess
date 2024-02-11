@@ -42,7 +42,7 @@
         </div>
 
         <!-- 2nd block -->
-        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
+        <!-- <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
           <h6 class="text-sm text-slate-100 font-bold mb-3">Essentials</h6>
           <ul class="text-sm font-[450] space-y-2">
             <li>
@@ -61,7 +61,8 @@
               <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Subscriptions</a>
             </li>
           </ul>
-        </div>
+        </div> -->
+        <div class="sm:col-span-6 md:col-span-3 lg:col-span-2"></div>
 
         <!-- 3rd block -->
         <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
@@ -71,39 +72,39 @@
               <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">About us</a>
             </li>
             <li>
-              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Diversity / Inclusion</a>
+              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Privacy Policy</a>
             </li>
             <li>
-              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Sustainability</a>
+              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Terms of Service</a>
             </li>
-            <li>
+            <!-- <li>
               <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Code of conduct</a>
             </li>
             <li>
               <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Financial statements</a>
-            </li>
+            </li> -->
           </ul>
         </div>
 
         <!-- 4th block -->
         <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-          <h6 class="text-sm text-slate-100 font-bold mb-3">Lifestyle</h6>
+          <h6 class="text-sm text-slate-100 font-bold mb-3">Resources</h6>
           <ul class="text-sm font-[450] space-y-2">
             <li>
-              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">International products</a>
+              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Blog</a>
             </li>
             <li>
-              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Currency exchange</a>
+              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Guides</a>
             </li>
             <li>
-              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Lounge & Smart delay</a>
+              <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Reviews</a>
             </li>
           </ul>
         </div>
 
         <!-- 5th block -->
         <div class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-          <h6 class="text-sm text-slate-100 font-bold mb-3">Company</h6>
+          <h6 class="text-sm text-slate-100 font-bold mb-3">Find us</h6>
           <ul class="text-sm font-[450] space-y-2">
             <li>
               <a class="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">Send us an email</a>
@@ -128,7 +129,9 @@
       <!-- Bottom area -->
       <div class="pb-4 md:pb-8">
         <div class="text-xs text-slate-500">
-          If you would like to find out more about which entity you receive services from please click <a class="font-medium underline hover:text-blue-500 transition duration-150 ease-in-out" href="#0">here</a> If you have any other questions, please reach out to us via the in-app chat. Custom Bank is a bank established in the Republic of Ireland. Custom Bank is licensed by the European Central Bank and regulated by the Bank of Ireland. Cusom Bank provides credit, payment, current account and demand deposit account services.
+          Guess isn’t just another feedback tool. It’s your gateway to deeply understanding customer needs and desires. Our service extends beyond simple surveys, providing a platform where customers can speak freely, in their own words, through audio, video, or text. With Guess, you’re not just collecting feedback; you’re engaging in a conversation. Be the first to experience the future of customer feedback. We’re opening the doors for select businesses to get early access to Guess. As a Beta partner, you’ll have the opportunity to shape the development of the tool with your insights. You’ll enjoy dedicated support, influence future features, and get special pricing once we launch. Apply for Beta access and lead the charge in revolutionizing customer feedback.
+
+          <!-- <a class="font-medium underline hover:text-blue-500 transition duration-150 ease-in-out" href="#0">here</a> -->
         </div>
       </div>
 
