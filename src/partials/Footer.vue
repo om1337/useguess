@@ -17,7 +17,7 @@
         <!-- 1st block -->
         <div class="sm:col-span-12 lg:col-span-2 lg:max-w-xs">
           <!-- Logo -->
-          <router-link class="block" to="/" aria-label="Guess">
+          <!-- <router-link class="block" to="/" aria-label="Guess">
             <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
               <g fill-rule="nonzero" fill="none">
                 <g class="fill-blue-500" transform="translate(3 3)">
@@ -34,6 +34,10 @@
                 </g>
               </g>
             </svg>
+          </router-link> -->
+
+          <router-link class="block" to="/" aria-label="Cruip">
+            <img class="h-8 md:h-10" :src="guessLogo" alt="Guess" />
           </router-link>
         </div>
 
@@ -132,8 +136,10 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'Footer',
-}
+<script lang="ts" setup>
+
+import guessLogo from "../images/GuessLogomark.svg";
+
+
+
 </script>

@@ -38,4 +38,6 @@
 <script lang="ts" setup>
 
 import guessLogo from "../images/GuessLogo3.svg";
+// @ts-ignore
+const logo: string = guessLogo;
 </script>
