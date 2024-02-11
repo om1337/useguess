@@ -45,7 +45,7 @@
           <div class="max-w-sm mx-auto md:max-w-none md:absolute md:left-[600px] md:top-0 -mb-12 md:-mt-12 md:mb-0">
             <div class="relative -ml-3 -mr-24 md:mx-0">
               <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 mt-16 md:mt-0 pointer-events-none -z-10 max-w-none mix-blend-lighten" src="../images/hero-illustration.svg" width="960" height="960" aria-hidden="true" />
-              <img src="../images/GuessForm-Tilt-1.svg" class="md:max-w-none" width="508" height="600" alt="Credit card" data-aos="fade-up" />
+              <img src="../images/GuessForm-Tilt-1.png" class="md:max-w-none" width="508" height="600" alt="Credit card" data-aos="fade-up" />
             </div>
           </div>
 
