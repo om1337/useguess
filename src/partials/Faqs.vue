@@ -46,7 +46,7 @@
             <!-- Item -->
             <div class="space-y-2">
               <h4 class="text-xl font-bold">Is there a trial version of Guess available?</h4>
-              <p class="text-slate-500">Yes, we offer a free trial so you can experience the full capabilities of Guess before committing to a subscription.</p>
+              <p class="text-slate-500">We plan to add a free trial version, once we are out of early access. Currently, all early access users will get our service for free, and a discounted price once we launch.</p>
             </div>
 
             <!-- Item -->

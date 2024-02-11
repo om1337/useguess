@@ -136,9 +136,9 @@
                       <div class="space-y-4">
                         <div class="sm:flex items-start justify-between sm:space-x-4">
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                            for="first-name">First name</label>
+                            for="first-name">First name*</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <input id="first-name" class="form-input text-sm py-2 w-full" type="text"
+                            <input v-model="form.firstName" id="first-name" class="form-input text-sm py-2 w-full" type="text" 
                               placeholder="Patrick" required />
                           </div>
                         </div>
@@ -146,23 +146,23 @@
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
                             for="last-name">Last name</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <input id="last-name" class="form-input text-sm py-2 w-full" type="text" placeholder="Mills"
+                            <input v-model="form.lastName" id="last-name" class="form-input text-sm py-2 w-full" type="text" placeholder="Mills"
                               required />
                           </div>
                         </div>
                         <div class="sm:flex items-start justify-between sm:space-x-4">
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                            for="email">Work email</label>
+                            for="email">Work email*</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <input id="email" class="form-input text-sm py-2 w-full" type="email"
+                            <input v-model="form.workEmail" id="email" class="form-input text-sm py-2 w-full" type="email"
                               placeholder="patrick@example.com" required />
                           </div>
                         </div>
                         <div class="sm:flex items-start justify-between sm:space-x-4">
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                            for="website">Website</label>
+                            for="website">Company Website*</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <input id="website" class="form-input text-sm py-2 w-full" type="text"
+                            <input v-model="form.companyWebsite" id="website" class="form-input text-sm py-2 w-full" type="text"
                               placeholder="example.com" required />
                           </div>
                         </div>
@@ -170,7 +170,7 @@
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
                             for="company-size">Company size</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <select id="company-size" class="form-select text-sm py-2 w-full" required>
+                            <select v-model="form.companySize" id="company-size" class="form-select text-sm py-2 w-full" required>
                               <option>Less than 10</option>
                               <option>More than 10</option>
                               <option>More than 20</option>
@@ -182,7 +182,7 @@
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
                             for="country">Country</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <select id="country" class="form-select text-sm py-2 w-full" required>
+                            <select v-model="form.country" id="country" class="form-select text-sm py-2 w-full" required>
                               <option>United States</option>
                               <option>United Kingdom</option>
                               <option>Germany</option>
@@ -194,14 +194,15 @@
                           <label class="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
                             for="comment">Anything else?</label>
                           <div class="sm:w-72 xl:w-80 shrink-0">
-                            <textarea id="comment" class="form-textarea text-sm py-2 w-full" rows="4"></textarea>
+                            <textarea v-model="form.comment" id="comment" class="form-textarea text-sm py-2 w-full" rows="4"></textarea>
                           </div>
                         </div>
                       </div>
                       <div class="mt-6 text-right">
-                        <button
-                          class="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm">Submit
-                          the form</button>
+                        <button @click.prevent="signUpEarlyAccess" type="submit"
+                          class="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm">Apply for early access</button>
+                        
+                        <p class=" mt-2 text-sm text-green-700" v-if="formSuccess === true">Your response has been successfully submitted!</p>
                     </div>
                   </form>
                 </div>
@@ -222,5 +223,58 @@
 </div></template>
 
 <script lang="ts" setup>
+import { ref } from "vue";
+import { db } from '../main.js';
+import { collection, addDoc } from "firebase/firestore";
+
 import guessLogo from "../images/GuessLogo3-Dark.svg";
+
+async function signUpEarlyAccess() {
+    try {
+        const docRef = await addDoc(collection(db, "early-access-form"), {
+            first_name: form.value.firstName,
+            last_name: form.value.lastName,
+            work_email: form.value.workEmail,
+            company_website: form.value.companyWebsite,
+            company_size: form.value.companySize,
+            country: form.value.country,
+            additional_comment: form.value.comment
+        });
+
+        console.log("email submitted", docRef);
+        alert("Thanks for signing up!");
+
+        formSuccess.value = true;
+
+        setTimeout(() => {
+            formSuccess.value = false;
+        }, 3000);
+
+        form.value.firstName = "";
+        form.value.lastName = "";
+        form.value.workEmail = "";
+        form.value.companyWebsite = "";
+        form.value.companySize = "";
+        form.value.country = "";
+        form.value.comment = "";
+
+
+    } catch (error) {
+        console.error("Error adding document: ", error);
+        alert("There was an error signing up. Please try again.");
+    }
+}
+
+const form = ref({
+  firstName: "",
+  lastName: "",
+  workEmail: "",
+  companyWebsite: "",
+  companySize: "",
+  country: "",
+  comment: "",
+});
+
+const formSuccess = ref(false);
+
 </script>

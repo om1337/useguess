@@ -23,7 +23,7 @@
               </svg>
             </div>
             <h4 class="text-xl font-bold mb-1">Engage deeper with your customers</h4>
-            <p class="text-slate-500">Unlock the another level of customer feedback with Guess. With a simple link, easily gather audio, video, and text feedback from your customers.</p>
+            <p class="text-slate-500">Dive into the nuances of what your customers really feel – beyond mere words. Our voice-driven technology captures the tone, emotion, and depth of your customers' feedback, providing a layer of understanding that traditional text analysis just lacks.</p>
           </div>
 
           <!-- 2nd item -->
@@ -43,7 +43,7 @@
               </svg>
             </div>
             <h4 class="text-xl font-bold mb-1">Easy setup and intuitive analysis at scale</h4>
-            <p class="text-slate-500">Let AI do the heavy lifting, transcribing and analyzing responses, giving you the clarity you need to make impactful business decisions.</p>
+            <p class="text-slate-500">Our advanced AI doesn't just transcribe; it interprets. Get feedback at scale without spending hours on analysis, enabling you to make impactful business decisions that resonate with your customers' true needs.</p>
           </div>
 
           <!-- 3rd item -->

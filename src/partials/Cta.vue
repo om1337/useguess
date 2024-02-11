@@ -12,7 +12,7 @@
           <!-- CTA content -->
           <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
             <p class="text-xl text-blue-500 font-[550] mb-3">Interested? So are we!</p>
-            <h2 class="h2 text-slate-100">Increase your customer engagement today!</h2>
+            <h2 class="h2 text-slate-100">Turn an "I didn't know" into an educated guess</h2>
           </div>
 
           <!-- Buttons -->
