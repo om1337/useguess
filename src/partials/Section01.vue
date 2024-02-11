@@ -22,8 +22,8 @@
                 </g>
               </svg>
             </div>
-            <h4 class="text-xl font-bold mb-1">Engage More Deeply with Your Customers</h4>
-            <p class="text-slate-500">Unlock the full potential of customer feedback with Guess – the all-in-one platform that lets you listen to your customers like never before. With our innovative tool, easily gather audio, video, and text feedback with a simple link.</p>
+            <h4 class="text-xl font-bold mb-1">Engage deeper with your customers</h4>
+            <p class="text-slate-500">Unlock the another level of customer feedback with Guess. With a simple link, easily gather audio, video, and text feedback from your customers.</p>
           </div>
 
           <!-- 2nd item -->
@@ -42,7 +42,7 @@
                 </g>
               </svg>
             </div>
-            <h4 class="text-xl font-bold mb-1">Seamless Integration, Intuitive Analysis</h4>
+            <h4 class="text-xl font-bold mb-1">Easy setup and intuitive analysis at scale</h4>
             <p class="text-slate-500">Let AI do the heavy lifting, transcribing and analyzing responses, giving you the clarity you need to make impactful business decisions.</p>
           </div>
 
@@ -62,8 +62,8 @@
                 </g>
               </svg>
             </div>
-            <h4 class="text-xl font-bold mb-1">Create custom cards</h4>
-            <p class="text-slate-500">Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.</p>
+            <h4 class="text-xl font-bold mb-1">Automate and grow as you scale</h4>
+            <p class="text-slate-500">Connect your favorite platforms through Zapier, and integrate Guess seamlessly into your customer journey and start receiving real-time feedback today.</p>
           </div>
 
         </div>
